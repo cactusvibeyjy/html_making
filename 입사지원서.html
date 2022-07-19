@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지원서 양식 만들기</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>입사 지원서</h1>
+        <h2>필수 정보</h2>
+        <div>
+            <label for="name">이&nbsp;름</label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="birthday">생년월일</label>
+            <input type="date" id="birthday">
+        </div>
+        <br>
+        <div>
+            <label for="gender">성&nbsp;별</label>
+            <select name="gender" id="gender">
+                <option value="male">남성</option>
+                <option value="female">여성</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">
+                <h1>개발자는 왜?</h1>
+            </label>
+            <div>
+                <textarea id="message" cols="20" rows="3"></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="tools">
+                <h1>사용해본 것들</h1>
+            </label>
+            <div>
+                <div><input type="checkbox" name="Java"> Java</div>
+                <div><input type="checkbox" name="Python"> Python</div>
+                <div><input type="checkbox" name="HTML/CSS"> HTML/CSS</div>
+                <div><input type="checkbox" name="JS"> JS</div>
+                <div><input type="checkbox" name="Bootstrap"> Bootstarp</div>
+                <div><input type="checkbox" name="SQL"> SQL</div>
+            </div>
+        </div>
+        <div>
+            <label for="position">
+                <h1>희망부서</h1>
+            </label>
+            <div><input type="radio" name="position" /> 프론트엔드</div>
+            <div><input type="radio" name="position"> 백엔드</div>
+            <div><input type="radio" name="position"> DB</div>
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">보내기</button>
+            <button type="reset">리셋</button>
+        </div>
+    </form>
+</body>
+
+</html>
